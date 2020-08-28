@@ -13,7 +13,14 @@ public class SortManager {
     private final int EXIT_OPTION = 10;
     private final int MAX_RUNS = 20;;   // over which to average the compared sort times
 
-    public SortManager() {
+    private SortManagerGUI sortManagerGUI;
+
+    public SortManager(SortManagerGUI sortManagerGUI) {
+        if (sortManagerGUI != null) {
+            this.sortManagerGUI = sortManagerGUI;
+            this.sortManagerGUI.sortManager = this;
+            this.sortManagerGUI.bigNumberArray = this.bigNumberArray;
+        }
     }
 
     public void runSortManager() {
@@ -27,7 +34,6 @@ public class SortManager {
             inputChoice = getSorterChoice();
 
             if (inputChoice != EXIT_OPTION) {
-
                 if (inputChoice != RE_RANDOMISE_ARRAY_OPTION) {
                     inputLength = getArrayLengthInput();
                     array = Arrays.copyOf(bigNumberArray, inputLength);
@@ -42,7 +48,6 @@ public class SortManager {
                     randomiseArray();
                     System.out.println("\nArray has been re-randomised.");
                 }
-
 
                 System.out.println();
             }

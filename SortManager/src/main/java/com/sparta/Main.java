@@ -4,7 +4,9 @@ package com.sparta;
 public class Main {
 
     public static void main(String[] args) {
-        SortManager sortManager = new SortManager();
+        SortManagerGUI sortManagerGUI = new SortManagerGUI("Sort Manager");
+
+        SortManager sortManager = new SortManager(sortManagerGUI);
         sortManager.runSortManager();
 
         System.exit(0);
