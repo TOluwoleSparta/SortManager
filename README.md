@@ -1,8 +1,9 @@
-<img src="https://github.com/TOluwoleSparta/SortManager/blob/master/Assets/SpartaGlobal.png" width="300">
+<img src="https://github.com/TOluwoleSparta/SortManager/blob/master/Assets/SpartaGlobal.png" width="250">
 
 # Sort Manager
-Sort Manager is a command line program that allows the user to select any of seven algorithms to sort an array of random integers in ascending order.
+Sort Manager is a command line program that allows the user to select any of seven algorithms to sort an array of random integers in ascending order. The program can be run either through the Command Line Interface (CLI) or through a Graphical User Interface (GUI).
 
+## CLI Program
 When you first run the program, the following menu will be shown to you in the command line:
 
 <img src="https://github.com/TOluwoleSparta/SortManager/blob/master/Assets/SorterMenu.PNG" width="500">
@@ -37,3 +38,32 @@ Otherwise, if you chose to compare all of the algorithms, the program will inste
 <img src="https://github.com/TOluwoleSparta/SortManager/blob/master/Assets/Comparison.PNG" width="500">
 
 After all of this, the program will return to the menu, where you will be free to choose another algorithm, make another comparison or re-randomise the array. You are free to make as many choices as you wish until you exit the program.
+
+## GUI Program
+When you run this program, a GUI application will open up. It will look like the following:
+
+<img src="https://github.com/TOluwoleSparta/SortManager/blob/GUI/Assets/SortManagerGUI.PNG" width="750">
+
+The seven sorting algorithms are listed down the left hand side of the GUI, as well as the option to set the length of the array and compare all of the algorithms. The re-randomise array option can be found in the bottom right corner or the GUI. Please note again that the array length input is still limited to 1,000,000.
+
+To sort an array or compare the algorithms, you must first enter the length of the array you wish to sort, then press the button corresponding to your desired action.
+
+If you decide to use a sorting algorithm, illustrated by the image below, the GUI will display
+- the sorting algorithm used
+- the unsorted array
+- the sorted array
+- the amount of time taken to sort the array
+
+<img src="https://github.com/TOluwoleSparta/SortManager/blob/GUI/Assets/GUISort.PNG" width="750">
+
+If you decide to compare all of the algorithms, instead the GUI will show
+- all sorting algorithms having been used
+- the unsorted array
+- the table of sorting times for each algorithm over the unsorted array, in ascending order
+- the fastest algorithm for that comparison and its recorded sort time
+
+<img src="https://github.com/TOluwoleSparta/SortManager/blob/GUI/Assets/GUICompare.PNG" width="750">
+
+The comparison may take some time to complete, especially with arrays of higher length, so you may need to wait for the GUI to finish running all of the algorithms and printing the results before you can take any other actions. Once any action has been completed, you can immediately pick another option.
+
+You can exit the program at any point by pressing the close [X] button in the top right corner of the screen.
