@@ -3,7 +3,7 @@ package com.sparta;
 import java.util.Arrays;
 
 public class SortResults {
-    private final int ARRAY_COMPRESSION_SIZE = 20;
+    private final int ARRAY_COMPRESSION_SIZE = 100;
     private final int[] unsortedArray;
     private final String algorithmUsed;
     private final int[] sortedArray;
