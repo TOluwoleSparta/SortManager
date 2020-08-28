@@ -99,7 +99,7 @@ public class SortManager {
         int inputLength;
 
         do {
-            System.out.println("\nHow long is the array?");
+            System.out.println("\nHow long is the array? (This will max out at 1,000,000)");
             System.out.print("Array Length: ");
 
             try {
@@ -118,6 +118,7 @@ public class SortManager {
                 System.out.println("Invalid input. Expected an integer input.");
                 scanner.nextLine();
             }
+            inputLength = Math.min(inputLength, 1_000_000);
 
         } while (inputLength < 1);
 
