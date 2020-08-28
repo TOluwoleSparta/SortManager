@@ -1,4 +1,4 @@
-<img src="https://github.com/TOluwoleSparta/SortManager/blob/master/Assets/SpartaGlobal.PNG" width="300">
+<img src="https://github.com/TOluwoleSparta/SortManager/blob/master/Assets/SpartaGlobal.png" width="300">
 
 # Sort Manager
 Sort Manager is a command line program that allows the user to select any of seven algorithms to sort an array of random integers in ascending order.
